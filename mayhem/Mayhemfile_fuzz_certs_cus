@@ -1,0 +1,7 @@
+project: savantenvs/strongswan
+target: fuzz_certs_cus
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_certs_cus
+    libfuzzer: true

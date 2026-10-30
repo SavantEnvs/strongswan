@@ -1,0 +1,7 @@
+project: savantenvs/strongswan
+target: fuzz_ocsp_req_def
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_ocsp_req_def
+    libfuzzer: true

@@ -1,0 +1,7 @@
+project: savantenvs/strongswan
+target: fuzz_radius
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_radius
+    libfuzzer: true
